@@ -1,0 +1,172 @@
+/* --- style.css --- */
+
+.dashboard-root {
+    -fx-background-color: #f8fafc;
+}
+
+.dashboard-target-input {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 9 12 9 12;
+    -fx-text-fill: #0f172a;
+    -fx-prompt-text-fill: #94a3b8;
+}
+
+.dashboard-target-input:focused {
+    -fx-border-color: #2563eb;
+    -fx-effect: dropshadow(three-pass-box, rgba(37,99,235,0.18), 8, 0, 0, 0);
+}
+
+/* 1. Xóa đường kẻ dọc và kẻ ngang mặc định của Table */
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #f1f5f9;
+    -fx-table-cell-border-color: transparent; /* XÓA ĐƯỜNG KẺ DỌC */
+    -fx-table-header-border-color: transparent;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 15, 0, 0, 5);
+}
+
+/* 2. Làm đẹp Header (Sạch sẽ và hiện đại) */
+.table-view .column-header-background {
+    -fx-background-color: #fcfcfc;
+    -fx-background-radius: 12 12 0 0;
+    -fx-border-color: transparent transparent #f1f5f9 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-size: 45px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #64748b;
+    -fx-font-weight: bold;
+}
+
+/* 3. Làm hàng (Row) thoáng hơn */
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #f8fafc transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-cell-size: 55px; /* Tăng chiều cao hàng để nhìn thoáng mắt */
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #f8fafc;
+}
+
+/* 4. Tùy chỉnh thanh Sidebar (Menu bên trái) */
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #64748b;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: #f1f5f9;
+    -fx-background-radius: 8;
+}
+
+.sidebar-button-active {
+    -fx-background-color: #eff6ff;
+    -fx-text-fill: #2563eb;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+}
+.table-view:focused {
+    -fx-background-color: white;
+}
+
+/* Remove the weird blue vertical lines when an individual cell is clicked */
+.table-view .table-cell {
+    -fx-border-color: transparent;
+}
+
+.table-view .table-cell:focused {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+/* Style the selected row smoothly (replaces the default harsh blue) */
+.table-row-cell:selected {
+    -fx-background-color: #eff6ff; /* A nice, modern very light blue */
+    -fx-border-color: transparent transparent #f8fafc transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Ensure text doesn't turn invisible/white when the row is selected */
+.table-row-cell:selected .text {
+    -fx-fill: #0f172a; 
+}
+
+/* Modern scroll panes */
+.modern-scroll-pane,
+.smooth-scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.modern-scroll-pane > .viewport,
+.smooth-scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.modern-scroll-pane .scroll-bar,
+.smooth-scroll-pane .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.modern-scroll-pane .scroll-bar:vertical,
+.smooth-scroll-pane .scroll-bar:vertical {
+    -fx-pref-width: 9px;
+    -fx-padding: 2px;
+}
+
+.modern-scroll-pane .scroll-bar:horizontal,
+.smooth-scroll-pane .scroll-bar:horizontal {
+    -fx-pref-height: 0px;
+    -fx-opacity: 0;
+}
+
+.modern-scroll-pane .scroll-bar .track,
+.smooth-scroll-pane .scroll-bar .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.modern-scroll-pane .scroll-bar .thumb,
+.smooth-scroll-pane .scroll-bar .thumb {
+    -fx-background-color: rgba(100, 116, 139, 0.32);
+    -fx-background-radius: 999px;
+    -fx-background-insets: 2px;
+}
+
+.modern-scroll-pane .scroll-bar .thumb:hover,
+.smooth-scroll-pane .scroll-bar .thumb:hover {
+    -fx-background-color: rgba(37, 99, 235, 0.45);
+}
+
+.modern-scroll-pane .scroll-bar .increment-button,
+.modern-scroll-pane .scroll-bar .decrement-button,
+.smooth-scroll-pane .scroll-bar .increment-button,
+.smooth-scroll-pane .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.modern-scroll-pane .scroll-bar .increment-arrow,
+.modern-scroll-pane .scroll-bar .decrement-arrow,
+.smooth-scroll-pane .scroll-bar .increment-arrow,
+.smooth-scroll-pane .scroll-bar .decrement-arrow {
+    -fx-shape: "";
+    -fx-padding: 0;
+}

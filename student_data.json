@@ -1,0 +1,215 @@
+{
+  "fullName": "Alan",
+  "studentId": "ITDSIU25012",
+  "semesters": [
+    {
+      "year": 2025,
+      "termType": "Sem 1",
+      "courses": [
+        {
+          "courseCode": "PE015IU",
+          "courseName": "Philosophy of Marxism and Leninism",
+          "credits": 3,
+          "status": "COMPLETED",
+          "assessments": [
+            {
+              "assessmentName": "In class",
+              "category": "Exam",
+              "weight": 30.0,
+              "score": 80.0,
+              "maxScore": 100.0
+            },
+            {
+              "assessmentName": "Midterm",
+              "category": "Exam",
+              "weight": 20.0,
+              "score": 80.0,
+              "maxScore": 100.0
+            },
+            {
+              "assessmentName": "Final",
+              "category": "Exam",
+              "weight": 50.0,
+              "score": 85.0,
+              "maxScore": 100.0
+            }
+          ]
+        },
+        {
+          "courseCode": "MA001IU",
+          "courseName": "Calculus 1",
+          "credits": 4,
+          "status": "COMPLETED",
+          "assessments": [
+            {
+              "assessmentName": "Inclass",
+              "category": "Exam",
+              "weight": 20.0,
+              "score": 90.0,
+              "maxScore": 100.0
+            },
+            {
+              "assessmentName": "MidTerm",
+              "category": "Exam",
+              "weight": 30.0,
+              "score": 91.0,
+              "maxScore": 100.0
+            },
+            {
+              "assessmentName": "Final",
+              "category": "Exam",
+              "weight": 50.0,
+              "score": 85.0,
+              "maxScore": 100.0
+            }
+          ]
+        },
+        {
+          "courseCode": "EN007IU",
+          "courseName": "Writting AE!",
+          "credits": 2,
+          "status": "COMPLETED",
+          "assessments": [
+            {
+              "assessmentName": "Inclass",
+              "category": "Exam",
+              "weight": 30.0,
+              "score": 83.0,
+              "maxScore": 100.0
+            },
+            {
+              "assessmentName": "MidTerm",
+              "category": "Exam",
+              "weight": 20.0,
+              "score": 53.0,
+              "maxScore": 100.0
+            },
+            {
+              "assessmentName": "Final",
+              "category": "Exam",
+              "weight": 50.0,
+              "score": 42.0,
+              "maxScore": 100.0
+            }
+          ]
+        },
+        {
+          "courseCode": "PE016IU",
+          "courseName": "Political economics of Marxism and Leninism",
+          "credits": 2,
+          "status": "COMPLETED",
+          "assessments": [
+            {
+              "assessmentName": "Inclass",
+              "category": "Exam",
+              "weight": 30.0,
+              "score": 85.0,
+              "maxScore": 100.0
+            },
+            {
+              "assessmentName": "Final",
+              "category": "Exam",
+              "weight": 50.0,
+              "score": 70.0,
+              "maxScore": 100.0
+            },
+            {
+              "assessmentName": "MidTerm",
+              "category": "Exam",
+              "weight": 20.0,
+              "score": 85.0,
+              "maxScore": 100.0
+            }
+          ]
+        },
+        {
+          "courseCode": "EN008",
+          "courseName": "Listening AE1",
+          "credits": 2,
+          "status": "COMPLETED",
+          "assessments": [
+            {
+              "assessmentName": "Inclass",
+              "category": "Exam",
+              "weight": 30.0,
+              "score": 100.0,
+              "maxScore": 100.0
+            },
+            {
+              "assessmentName": "MidTerm",
+              "category": "Exam",
+              "weight": 20.0,
+              "score": 70.0,
+              "maxScore": 100.0
+            },
+            {
+              "assessmentName": "Final",
+              "category": "Exam",
+              "weight": 50.0,
+              "score": 89.0,
+              "maxScore": 100.0
+            }
+          ]
+        },
+        {
+          "courseCode": "IT149IU",
+          "courseName": "Fundamentals of Programming",
+          "credits": 4,
+          "status": "COMPLETED",
+          "assessments": [
+            {
+              "assessmentName": "Inclass",
+              "category": "Exam",
+              "weight": 30.0,
+              "score": 96.0,
+              "maxScore": 100.0
+            },
+            {
+              "assessmentName": "MidTerm",
+              "category": "Exam",
+              "weight": 30.0,
+              "score": 72.0,
+              "maxScore": 100.0
+            },
+            {
+              "assessmentName": "Final",
+              "category": "Exam",
+              "weight": 40.0,
+              "score": 77.0,
+              "maxScore": 100.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "termType": "Sem 2",
+      "courses": [
+        {
+          "courseCode": "MA036IU",
+          "courseName": "Probability and Statistics",
+          "credits": 3,
+          "status": "ACTIVE",
+          "assessments": [
+            {
+              "assessmentName": "MidTerm",
+              "category": "Exam",
+              "weight": 30.0,
+              "score": 85.0,
+              "maxScore": 100.0
+            },
+            {
+              "assessmentName": "Final",
+              "category": "Exam",
+              "weight": 50.0,
+              "score": 90.0,
+              "maxScore": 100.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "activeSemesterName": "2025 - Sem 2"
+}

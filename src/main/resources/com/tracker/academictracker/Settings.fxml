@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane fitToWidth="true" hbarPolicy="NEVER" pannable="true" style="-fx-background-color: transparent; -fx-background: #f8fafc;" styleClass="modern-scroll-pane" stylesheets="@style.css" vbarPolicy="AS_NEEDED" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tracker.academictracker.ui.controller.SettingsController">
+    <content>
+        <VBox spacing="30" style="-fx-background-color: #f8fafc;">
+            <padding>
+                <Insets bottom="40" left="40" right="40" top="40" />
+            </padding>
+
+    <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #0f172a;" text="System Settings" />
+
+    <VBox spacing="15" style="-fx-background-color: white; -fx-background-radius: 12; -fx-padding: 30; -fx-border-color: #e2e8f0; -fx-border-radius: 12; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.04), 10, 0, 0, 4);">
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #1e293b;" text="Data Persistence" />
+        <Label wrapText="true" style="-fx-text-fill: #64748b; -fx-font-size: 14px;" text="Your data is automatically saved to your local drive. Use these controls to manually save, load, export, or import your data." />
+        
+        <VBox spacing="15">
+            <VBox.margin><Insets top="10" /></VBox.margin>
+            <HBox spacing="15">
+                <Button maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#handleSaveData" style="-fx-background-color: #2563eb; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 12; -fx-background-radius: 8; -fx-cursor: hand;" text="💾 Save Data" />
+                <Button maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#handleLoadData" style="-fx-background-color: #475569; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 12; -fx-background-radius: 8; -fx-cursor: hand;" text="📥 Load Data" />
+            </HBox>
+            <HBox spacing="15">
+                <Button maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#handleExportData" style="-fx-background-color: #16a34a; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 12; -fx-background-radius: 8; -fx-cursor: hand;" text="📤 Export to File" />
+                <Button maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#handleImportData" style="-fx-background-color: #9333ea; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 12; -fx-background-radius: 8; -fx-cursor: hand;" text="📁 Import from File" />
+            </HBox>
+        </VBox>
+    </VBox>
+
+    <VBox spacing="15" style="-fx-background-color: white; -fx-background-radius: 12; -fx-padding: 30; -fx-border-color: #e2e8f0; -fx-border-radius: 12; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.04), 10, 0, 0, 4);">
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #1e293b;" text="About" />
+        <Label wrapText="true" style="-fx-text-fill: #64748b; -fx-font-size: 14px;" text="Academic Tracker helps you manage courses, track grades, and predict your GPA. All data is stored locally on your device." />
+    </VBox>
+
+        </VBox>
+    </content>
+</ScrollPane>

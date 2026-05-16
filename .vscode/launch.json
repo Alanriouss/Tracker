@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Academic Tracker",
+      "request": "launch",
+      "mainClass": "com.tracker.academictracker.app.Launcher",
+      "projectName": "academic-tracker"
+    }
+  ]
+}
